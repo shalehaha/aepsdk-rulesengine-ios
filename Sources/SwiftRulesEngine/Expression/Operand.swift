@@ -18,7 +18,7 @@ public enum Operand<T> {
     case some(T)
     case token(MustacheToken)
 
-    func dynamicallyCall(withArguments args: [Context]) -> T? {
+    public func dynamicallyCall(withArguments args: [Context]) -> T? {
         switch self {
         case .none:
             return nil

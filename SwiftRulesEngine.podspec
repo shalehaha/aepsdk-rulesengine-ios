@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   s.source_files          = 'Sources/RulesEngine/**/*.swift'
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 
 end
