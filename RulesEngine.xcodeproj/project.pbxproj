@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"RulesEngine::RulesEnginePackageTests::ProductTarget" /* RulesEnginePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_88 /* Build configuration list for PBXAggregateTarget "RulesEnginePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_91 /* PBXTargetDependency */,
+			);
+			name = RulesEnginePackageTests;
+			productName = RulesEnginePackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* JsonParserTests.swift */; };
+		OBJ_101 /* JsonRuleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* JsonRuleParser.swift */; };
+		OBJ_102 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ParserTests.swift */; };
+		OBJ_103 /* RulesEngineDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* RulesEngineDebugTests.swift */; };
+		OBJ_104 /* RulesEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* RulesEngineTests.swift */; };
+		OBJ_105 /* TraverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* TraverseTests.swift */; };
+		OBJ_106 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* AnyCodable.swift */; };
+		OBJ_107 /* AnyCodeable+Traversable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AnyCodeable+Traversable.swift */; };
+		OBJ_108 /* Event+Rules_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Event+Rules_Tests.swift */; };
+		OBJ_109 /* Event+Traversable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Event+Traversable.swift */; };
+		OBJ_110 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Event.swift */; };
+		OBJ_111 /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* EventSource.swift */; };
+		OBJ_112 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* EventType.swift */; };
+		OBJ_113 /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* SharedState.swift */; };
+		OBJ_115 /* SwiftRulesEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RulesEngine::RulesEngine::Product" /* SwiftRulesEngine.framework */; };
+		OBJ_63 /* ConditionEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ConditionEvaluator.swift */; };
+		OBJ_64 /* ConditionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConditionRule.swift */; };
+		OBJ_65 /* Evaluable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Evaluable.swift */; };
+		OBJ_66 /* Evaluating.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Evaluating.swift */; };
+		OBJ_67 /* ComparisonExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* ComparisonExpression.swift */; };
+		OBJ_68 /* ConjunctionExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* ConjunctionExpression.swift */; };
+		OBJ_69 /* Operand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Operand.swift */; };
+		OBJ_70 /* UnaryExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* UnaryExpression.swift */; };
+		OBJ_71 /* Operand+Literal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Operand+Literal.swift */; };
+		OBJ_72 /* Result+RulesFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Result+RulesFailure.swift */; };
+		OBJ_73 /* RulesEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* RulesEngine.swift */; };
+		OBJ_74 /* MustacheToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MustacheToken.swift */; };
+		OBJ_75 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Template.swift */; };
+		OBJ_76 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* TemplateParser.swift */; };
+		OBJ_77 /* TemplateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* TemplateToken.swift */; };
+		OBJ_78 /* Transforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Transforming.swift */; };
+		OBJ_79 /* Traversable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Traversable.swift */; };
+		OBJ_86 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_97 /* DSLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* DSLParserTests.swift */; };
+		OBJ_98 /* RuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* RuleBuilder.swift */; };
+		OBJ_99 /* ExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ExpressionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F31A61324B18462006DF0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "RulesEngine::RulesEngine";
+			remoteInfo = RulesEngine;
+		};
+		3F31A61424B18463006DF0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "RulesEngine::RulesEngineTests";
+			remoteInfo = RulesEngineTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* ConditionRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionRule.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Evaluable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluable.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Evaluating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluating.swift; sourceTree = "<group>"; };
+		OBJ_14 /* ComparisonExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonExpression.swift; sourceTree = "<group>"; };
+		OBJ_15 /* ConjunctionExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjunctionExpression.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Operand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operand.swift; sourceTree = "<group>"; };
+		OBJ_17 /* UnaryExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnaryExpression.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Operand+Literal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operand+Literal.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* Result+RulesFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+RulesFailure.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* RulesEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesEngine.swift; sourceTree = "<group>"; };
+		OBJ_22 /* MustacheToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheToken.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		OBJ_24 /* TemplateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
+		OBJ_25 /* TemplateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateToken.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Transforming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transforming.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Traversable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traversable.swift; sourceTree = "<group>"; };
+		OBJ_31 /* DSLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSLParserTests.swift; sourceTree = "<group>"; };
+		OBJ_32 /* RuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBuilder.swift; sourceTree = "<group>"; };
+		OBJ_33 /* ExpressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionTests.swift; sourceTree = "<group>"; };
+		OBJ_35 /* JsonParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParserTests.swift; sourceTree = "<group>"; };
+		OBJ_36 /* JsonRuleParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonRuleParser.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		OBJ_39 /* RulesEngineDebugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesEngineDebugTests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* RulesEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesEngineTests.swift; sourceTree = "<group>"; };
+		OBJ_41 /* TraverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraverseTests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		OBJ_44 /* AnyCodeable+Traversable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCodeable+Traversable.swift"; sourceTree = "<group>"; };
+		OBJ_45 /* Event+Rules_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Rules_Tests.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* Event+Traversable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Traversable.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		OBJ_48 /* EventSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSource.swift; sourceTree = "<group>"; };
+		OBJ_49 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		OBJ_50 /* SharedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedState.swift; sourceTree = "<group>"; };
+		OBJ_54 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		OBJ_55 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_56 /* RulesEngine.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RulesEngine.podspec; sourceTree = "<group>"; };
+		OBJ_57 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* ConditionEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionEvaluator.swift; sourceTree = "<group>"; };
+		"RulesEngine::RulesEngine::Product" /* SwiftRulesEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftRulesEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"RulesEngine::RulesEngineTests::Product" /* RulesEngineTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = RulesEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_115 /* SwiftRulesEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_13 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* ComparisonExpression.swift */,
+				OBJ_15 /* ConjunctionExpression.swift */,
+				OBJ_16 /* Operand.swift */,
+				OBJ_17 /* UnaryExpression.swift */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* MustacheToken.swift */,
+				OBJ_23 /* Template.swift */,
+				OBJ_24 /* TemplateParser.swift */,
+				OBJ_25 /* TemplateToken.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		OBJ_28 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* RulesEngineTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_29 /* RulesEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* DSL */,
+				OBJ_33 /* ExpressionTests.swift */,
+				OBJ_34 /* Json */,
+				OBJ_37 /* Mustache */,
+				OBJ_39 /* RulesEngineDebugTests.swift */,
+				OBJ_40 /* RulesEngineTests.swift */,
+				OBJ_41 /* TraverseTests.swift */,
+				OBJ_42 /* swift-core */,
+			);
+			name = RulesEngineTests;
+			path = Tests/RulesEngineTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_30 /* DSL */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* DSLParserTests.swift */,
+				OBJ_32 /* RuleBuilder.swift */,
+			);
+			path = DSL;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* JsonParserTests.swift */,
+				OBJ_36 /* JsonRuleParser.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		OBJ_37 /* Mustache */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* ParserTests.swift */,
+			);
+			path = Mustache;
+			sourceTree = "<group>";
+		};
+		OBJ_42 /* swift-core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* AnyCodable.swift */,
+				OBJ_44 /* AnyCodeable+Traversable.swift */,
+				OBJ_45 /* Event+Rules_Tests.swift */,
+				OBJ_46 /* Event+Traversable.swift */,
+				OBJ_47 /* Event.swift */,
+				OBJ_48 /* EventSource.swift */,
+				OBJ_49 /* EventType.swift */,
+				OBJ_50 /* SharedState.swift */,
+			);
+			path = "swift-core";
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_28 /* Tests */,
+				OBJ_51 /* Products */,
+				OBJ_54 /* CODE_OF_CONDUCT.md */,
+				OBJ_55 /* LICENSE */,
+				OBJ_56 /* RulesEngine.podspec */,
+				OBJ_57 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"RulesEngine::RulesEngineTests::Product" /* RulesEngineTests.xctest */,
+				"RulesEngine::RulesEngine::Product" /* SwiftRulesEngine.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* RulesEngine */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* RulesEngine */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* ConditionEvaluator.swift */,
+				OBJ_10 /* ConditionRule.swift */,
+				OBJ_11 /* Evaluable.swift */,
+				OBJ_12 /* Evaluating.swift */,
+				OBJ_13 /* Expression */,
+				OBJ_18 /* Operand+Literal.swift */,
+				OBJ_19 /* Result+RulesFailure.swift */,
+				OBJ_20 /* RulesEngine.swift */,
+				OBJ_21 /* Template */,
+				OBJ_26 /* Transforming.swift */,
+				OBJ_27 /* Traversable.swift */,
+			);
+			name = RulesEngine;
+			path = Sources/RulesEngine;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"RulesEngine::RulesEngine" /* SwiftRulesEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "SwiftRulesEngine" */;
+			buildPhases = (
+				OBJ_62 /* Sources */,
+				OBJ_80 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRulesEngine;
+			productName = RulesEngine;
+			productReference = "RulesEngine::RulesEngine::Product" /* SwiftRulesEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"RulesEngine::RulesEngineTests" /* RulesEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_93 /* Build configuration list for PBXNativeTarget "RulesEngineTests" */;
+			buildPhases = (
+				OBJ_96 /* Sources */,
+				OBJ_114 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_116 /* PBXTargetDependency */,
+			);
+			name = RulesEngineTests;
+			productName = RulesEngineTests;
+			productReference = "RulesEngine::RulesEngineTests::Product" /* RulesEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"RulesEngine::SwiftPMPackageDescription" /* RulesEnginePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_82 /* Build configuration list for PBXNativeTarget "RulesEnginePackageDescription" */;
+			buildPhases = (
+				OBJ_85 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RulesEnginePackageDescription;
+			productName = RulesEnginePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "RulesEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"RulesEngine::RulesEngine" /* SwiftRulesEngine */,
+				"RulesEngine::SwiftPMPackageDescription" /* RulesEnginePackageDescription */,
+				"RulesEngine::RulesEnginePackageTests::ProductTarget" /* RulesEnginePackageTests */,
+				"RulesEngine::RulesEngineTests" /* RulesEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_63 /* ConditionEvaluator.swift in Sources */,
+				OBJ_64 /* ConditionRule.swift in Sources */,
+				OBJ_65 /* Evaluable.swift in Sources */,
+				OBJ_66 /* Evaluating.swift in Sources */,
+				OBJ_67 /* ComparisonExpression.swift in Sources */,
+				OBJ_68 /* ConjunctionExpression.swift in Sources */,
+				OBJ_69 /* Operand.swift in Sources */,
+				OBJ_70 /* UnaryExpression.swift in Sources */,
+				OBJ_71 /* Operand+Literal.swift in Sources */,
+				OBJ_72 /* Result+RulesFailure.swift in Sources */,
+				OBJ_73 /* RulesEngine.swift in Sources */,
+				OBJ_74 /* MustacheToken.swift in Sources */,
+				OBJ_75 /* Template.swift in Sources */,
+				OBJ_76 /* TemplateParser.swift in Sources */,
+				OBJ_77 /* TemplateToken.swift in Sources */,
+				OBJ_78 /* Transforming.swift in Sources */,
+				OBJ_79 /* Traversable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_86 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_97 /* DSLParserTests.swift in Sources */,
+				OBJ_98 /* RuleBuilder.swift in Sources */,
+				OBJ_99 /* ExpressionTests.swift in Sources */,
+				OBJ_100 /* JsonParserTests.swift in Sources */,
+				OBJ_101 /* JsonRuleParser.swift in Sources */,
+				OBJ_102 /* ParserTests.swift in Sources */,
+				OBJ_103 /* RulesEngineDebugTests.swift in Sources */,
+				OBJ_104 /* RulesEngineTests.swift in Sources */,
+				OBJ_105 /* TraverseTests.swift in Sources */,
+				OBJ_106 /* AnyCodable.swift in Sources */,
+				OBJ_107 /* AnyCodeable+Traversable.swift in Sources */,
+				OBJ_108 /* Event+Rules_Tests.swift in Sources */,
+				OBJ_109 /* Event+Traversable.swift in Sources */,
+				OBJ_110 /* Event.swift in Sources */,
+				OBJ_111 /* EventSource.swift in Sources */,
+				OBJ_112 /* EventType.swift in Sources */,
+				OBJ_113 /* SharedState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "RulesEngine::RulesEngine" /* SwiftRulesEngine */;
+			targetProxy = 3F31A61324B18462006DF0C0 /* PBXContainerItemProxy */;
+		};
+		OBJ_91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "RulesEngine::RulesEngineTests" /* RulesEngineTests */;
+			targetProxy = 3F31A61424B18463006DF0C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = RulesEngine.xcodeproj/RulesEngine_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftRulesEngine;
+				PRODUCT_MODULE_NAME = SwiftRulesEngine;
+				PRODUCT_NAME = SwiftRulesEngine;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = RulesEngine;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = RulesEngine.xcodeproj/RulesEngine_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftRulesEngine;
+				PRODUCT_MODULE_NAME = SwiftRulesEngine;
+				PRODUCT_NAME = SwiftRulesEngine;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = RulesEngine;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = RulesEngine.xcodeproj/RulesEngineTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = RulesEngineTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = RulesEngine.xcodeproj/RulesEngineTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = RulesEngineTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "RulesEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_59 /* Build configuration list for PBXNativeTarget "SwiftRulesEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_60 /* Debug */,
+				OBJ_61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_82 /* Build configuration list for PBXNativeTarget "RulesEnginePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_83 /* Debug */,
+				OBJ_84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_88 /* Build configuration list for PBXAggregateTarget "RulesEnginePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_89 /* Debug */,
+				OBJ_90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_93 /* Build configuration list for PBXNativeTarget "RulesEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_94 /* Debug */,
+				OBJ_95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
