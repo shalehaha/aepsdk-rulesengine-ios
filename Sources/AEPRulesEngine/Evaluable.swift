@@ -12,7 +12,7 @@
 
 import Foundation
 
-/// A type that can be evaluated to a boolean
+/// A type that can be evaluated to a boolean 
 public protocol Evaluable {
     func evaluate(in context: Context) -> Result<Bool, RulesFailure>
 }

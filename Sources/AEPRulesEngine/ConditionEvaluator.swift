@@ -10,9 +10,16 @@
  governing permissions and limitations under the License.
  */
 
+/// A implementation of the `Evaluating` protocol based on  conditional comparison
 public class ConditionEvaluator: Evaluating {
     fileprivate let LOG_TAG = "ConditionEvaluator"
     var operators: [String: Any] = [:]
+    
+    /// evaluates a single parameter with the give operation name
+    /// - Parameters:
+    ///   - operation: the name of the operation
+    ///   - lhs: a single parameter
+    /// - Returns: `Result<True>` when the `operation` is defined and the evaluation is success, otherwise, returns `Result` with failure
     public func evaluate<A>(operation: String, lhs: A) -> Result<Bool, RulesFailure> {
         let op = operators[getHash(operation: operation, typeA: A.self)] as? ((A) -> Bool)
         guard let op_ = op else {
@@ -22,7 +29,13 @@ public class ConditionEvaluator: Evaluating {
         }
         return op_(lhs) ? Result.success(true) : Result.failure(.conditionNotMatched(message: "(\(String(describing: A.self))(\(lhs)) \(operation))"))
     }
-
+    
+    /// evaluates two parameters swith the give operation name
+    /// - Parameters:
+    ///   - operation: the name of the operation
+    ///   - lhs: left hand side parameter
+    ///   - rhs: right hand side parameter
+    /// - Returns: `Result<True>` when the `operation` is defined and the evaluation is success, otherwise, returns `Result` with failure
     public func evaluate<A, B>(operation: String, lhs: A, rhs: B) -> Result<Bool, RulesFailure> {
         let op = operators[getHash(operation: operation, typeA: A.self, typeB: B.self)] as? ((A, B) -> Bool)
 
@@ -35,15 +48,31 @@ public class ConditionEvaluator: Evaluating {
     }
 }
 
+/// Defines methods used to register operators
 extension ConditionEvaluator {
+    
+    /// registers a unary operator
+    /// - Parameters:
+    ///   - operation: the name of the operation
+    ///   - closure: the closure used to run the acutally evaluation logic
     public func addUnaryOperator<A>(operation: String, closure: @escaping (A) -> Bool) {
         operators[getHash(operation: operation, typeA: A.self)] = closure
     }
-
+    
+    /// registers comparison operator for parameters with different types
+    /// - Parameters:
+    ///   - operation: the name of the operation
+    ///   - closure: the closure used to run the acutally evaluation logic, which accepts two paraemters and return a boolen value
     public func addComparisonOperator<A, B>(operation: String, closure: @escaping (A, B) -> Bool) {
         operators[getHash(operation: operation, typeA: A.self, typeB: B.self)] = closure
     }
 
+    
+    /// registers comparison operator for parameters with the same type
+    /// - Parameters:
+    ///   - operation: the name of the operation
+    ///   - :  a `Type` parameter, only used for generic
+    ///   - closure: the closure used to run the acutally evaluation logic, which accepts two paraemters and return a boolen value
     public func addComparisonOperator<A>(operation: String, type _: A.Type, closure: @escaping (A, A) -> Bool) {
         operators[getHash(operation: operation, typeA: A.self, typeB: A.self)] = closure
     }
@@ -57,7 +86,9 @@ extension ConditionEvaluator {
     }
 }
 
+/// Defined `init` method and the default set of operators
 public extension ConditionEvaluator {
+    /// The `OptionSet` used to init a `ConditionEvaluator`
     struct Options: OptionSet {
         public let rawValue: Int
         public static let defaultOptions = Options(rawValue: 1 << 0)
